@@ -9,6 +9,6 @@ class BerandaScreen extends StatelessWidget {
       body: Center(
         child: Text('Ini Halaman Beranda'),
       ),
-    );
+    ); 
   }
 }
