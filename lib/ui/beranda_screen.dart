@@ -5,8 +5,15 @@ class BerandaScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      drawer: Drawer(
+        child:  ListView(
+          children: [
+            TextButton(onPressed: (){}, child: const Text('Menu 1'))
+          ],
+        ),
+      ),
+      body: const Center(
         child: Text('Ini Halaman Beranda'),
       ),
     ); 
