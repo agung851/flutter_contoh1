@@ -5,6 +5,7 @@ void main() {
   runApp(const MaterialApp(
     home: BerandaScreen(),
     title: 'Contoh 1',
+    debugShowCheckedModeBanner: false,
   ));
 }
  
