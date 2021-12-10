@@ -14,7 +14,7 @@ class BerandaScreen extends StatelessWidget {
         ),
       ),
       body: const Center(
-        child: Text('Ini Halaman Beranda ku'),
+        child: Text('Ini Halaman Beranda ini'),
       ),
     ); 
   }
