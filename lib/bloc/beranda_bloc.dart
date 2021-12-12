@@ -12,19 +12,18 @@ class MangaEventOnRefreshFinish extends MangaEvent{
 
 class MangaState{
    final List data;
-   final bool loading;
-   final List dataBaru;
-   
-   MangaState({this.data = const [], this.loading = false, 
-    this.dataBaru = const []});
+   final bool loading; 
+   MangaState({this.data = const [], this.loading = false });
 
    MangaState copyWith({
-     List? data, bool? loading, List? dataBaru
+     List? data, bool? loading 
    })=>MangaState(
      data: ( data ?? this.data ),
      loading: loading ?? this.loading, 
    );
 }
+
+
 
 class MangaBloc extends Bloc<MangaEvent, MangaState>{
    MangaBloc() : super(MangaState()){
