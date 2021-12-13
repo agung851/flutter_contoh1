@@ -1,9 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.agung.app1.contoh1">
+
+    <!-- Allows storing screenshots on external storage, where it can be accessed by ADB -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
+
+    <!-- Allows changing locales -->
+    <uses-permission
+            android:name="android.permission.CHANGE_CONFIGURATION"  />
+
+    <!-- Allows changing SystemUI demo mode -->
+    <uses-permission
+            android:name="android.permission.DUMP"  />
+
    <application
-        android:label="contoh1"
+        android:label="Contoh Nih"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
